@@ -9,7 +9,11 @@ namespace lab01_brian
             Console.Write("Please Enter a Player Name: ");
             string playerName = Console.ReadLine();
             Player player = new Player(playerName);
+            Console.WriteLine();
             Console.WriteLine($"Hello {player.UserName} welcome to my game!");
+            Console.Write(@"Are you ready to play?
+Y/n: ");
+            Console.ReadLine();
 
         }
     }
