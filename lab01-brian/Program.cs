@@ -6,7 +6,11 @@ namespace lab01_brian
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("Please Enter a Player Name: ");
+            string playerName = Console.ReadLine();
+            Player player = new Player(playerName);
+            Console.WriteLine($"Hello {player.UserName} welcome to my game!");
+
         }
     }
 }
